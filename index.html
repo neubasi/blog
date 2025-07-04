@@ -11,7 +11,8 @@
         <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <h2>Inhaltsverzeichnis</h2>
-            <ul class="nav-menu">
+            <button class="mobile-nav-toggle" onclick="toggleNav()">☰ Inhaltsverzeichnis</button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#neuronale-netze">1. Neuronale Netze</a></li>
                 <li><a href="#funktionsweise" class="sub-item">1.1 Funktionsweise</a></li>
                 <li><a href="#hidden-layers" class="sub-item">1.2 Hidden Layers</a></li>
@@ -88,5 +89,12 @@
             </article>
         </main>
     </div>
+    
+    <script>
+        function toggleNav() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
