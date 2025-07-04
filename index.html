@@ -1,13 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simon's Tech Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Test 123, Simon</h1>
-    <button class="blue-button">Klick mich!</button>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <h2>Inhaltsverzeichnis</h2>
+            <ul class="nav-menu">
+                <li><a href="#neuronale-netze">1. Neuronale Netze</a></li>
+                <li><a href="#funktionsweise" class="sub-item">1.1 Funktionsweise</a></li>
+                <li><a href="#hidden-layers" class="sub-item">1.2 Hidden Layers</a></li>
+                <li><a href="#aktivierungsfunktionen" class="sub-item">1.3 Aktivierungsfunktionen</a></li>
+                <li><a href="#machine-learning">2. Machine Learning</a></li>
+                <li><a href="#supervised-learning" class="sub-item">2.1 Supervised Learning</a></li>
+                <li><a href="#unsupervised-learning" class="sub-item">2.2 Unsupervised Learning</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="blog-header">
+                <h1 class="blog-title">Simon's Blog</h1>
+                <p class="blog-subtitle">Gedanken und Erkenntnisse zu KI, Machine Learning und mehr</p>
+            </header>
+
+            <!-- Blog Post 1 -->
+            <article class="blog-post" id="neuronale-netze">
+                <h2 class="post-title">Neuronale Netze: Eine Einführung</h2>
+                <div class="post-meta">4. Juli 2025</div>
+                <div class="post-content">
+                    <p>Neuronale Netze sind eine der faszinierendsten Technologien unserer Zeit. Sie bilden die Grundlage für viele moderne KI-Anwendungen und haben die Art, wie wir über maschinelles Lernen denken, revolutioniert.</p>
+                    
+                    <h3 id="funktionsweise">Funktionsweise</h3>
+                    <p>Ein neuronales Netz besteht aus miteinander verbundenen Knoten (Neuronen), die in Schichten angeordnet sind. Jede Verbindung hat ein Gewicht, das bestimmt, wie stark das Signal von einem Neuron zum anderen übertragen wird.</p>
+                    
+                    <p>Die grundlegenden Komponenten sind:</p>
+                    <ul>
+                        <li>Eingabeschicht (Input Layer)</li>
+                        <li>Versteckte Schichten (Hidden Layers)</li>
+                        <li>Ausgabeschicht (Output Layer)</li>
+                    </ul>
+
+                    <h3 id="hidden-layers">Hidden Layers</h3>
+                    <p>Die Hidden Layers sind das Herzstück eines neuronalen Netzes. Hier findet die eigentliche "Magie" statt - die Transformation der Eingabedaten in nützliche Repräsentationen.</p>
+                    
+                    <p>Je mehr Hidden Layers ein Netz hat, desto komplexere Muster kann es erkennen. Allerdings steigt auch die Komplexität des Trainings exponentiell an.</p>
+
+                    <h3 id="aktivierungsfunktionen">Aktivierungsfunktionen</h3>
+                    <p>Aktivierungsfunktionen bestimmen, ob und wie stark ein Neuron "feuert". Beliebte Funktionen sind:</p>
+                    <ul>
+                        <li>ReLU (Rectified Linear Unit)</li>
+                        <li>Sigmoid</li>
+                        <li>Tanh</li>
+                        <li>Softmax</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post" id="machine-learning">
+                <h2 class="post-title">Machine Learning: Mehr als nur Algorithmen</h2>
+                <div class="post-meta">3. Juli 2025</div>
+                <div class="post-content">
+                    <p>Machine Learning ist nicht nur eine Sammlung von Algorithmen - es ist eine neue Art, Probleme zu lösen. Anstatt explizite Regeln zu programmieren, lassen wir Computer aus Daten lernen.</p>
+                    
+                    <h3 id="supervised-learning">Supervised Learning</h3>
+                    <p>Beim überwachten Lernen trainieren wir Modelle mit gelabelten Daten. Das Modell lernt, Eingaben auf die gewünschten Ausgaben zu mappen.</p>
+                    
+                    <p>Typische Anwendungen:</p>
+                    <ul>
+                        <li>Bildklassifikation</li>
+                        <li>Spracherkennung</li>
+                        <li>Medizinische Diagnose</li>
+                        <li>Finanzprognosen</li>
+                    </ul>
+
+                    <h3 id="unsupervised-learning">Unsupervised Learning</h3>
+                    <p>Unüberwachtes Lernen findet Muster in Daten ohne vorgegebene Labels. Es ist besonders nützlich für explorative Datenanalyse und das Entdecken versteckter Strukturen.</p>
+                    
+                    <p>Die Zukunft des Machine Learning liegt in der Kombination verschiedener Ansätze und der Entwicklung immer effizienterer Algorithmen.</p>
+                </div>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
